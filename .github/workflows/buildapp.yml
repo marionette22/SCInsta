@@ -118,7 +118,7 @@ jobs:
 
             - name: Upload Artifact
               if: ${{ inputs.upload_artifact }}
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                 name: SCInsta_sideloaded_v${{ steps.scinsta_version.outputs.version }}
                 path: ${{ github.workspace }}/main/packages/${{ steps.package_name.outputs.package }}
